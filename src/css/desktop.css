@@ -1,0 +1,158 @@
+@import url("base/fonts.css");
+
+html {
+	height: 100%;
+}
+
+body {
+	font-family: "Mi Lanting", arial;
+	font-size: 18px;
+	color: #ffffff;
+	height: 100%;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.widget {
+	height: 645px;
+	width: 365px;
+	background-color: #ffffff;
+	border: 1px solid black;
+	position: relative;
+}
+
+
+/*main screen*/
+
+.main-screen {
+	height: 100%;
+}
+
+.main-screen__menu-wrapper {
+	height: 100%;
+    width: 100%;
+    text-align: left;
+}
+
+.menu-wrapper__menu {
+	display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 30px;
+    cursor: pointer;
+    height: 33.3%;
+    text-align: center;
+}
+
+.menu-wrapper__menu-codes {
+	background-color: #242424;
+}
+
+.menu-wrapper__menu-temp {
+	background-color: #4d4d4d;
+}
+
+.menu-wrapper__menu-fuel {
+	background-color: #bdbdbd;
+}
+
+
+/*converter*/
+
+.widget__converter {
+	height: 100%;
+	background-color: #000000;
+}
+
+
+.converter__top-wrapper {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	height: 50%;
+}
+
+
+.top-wrapper__results-wrapper {
+	width: 100%;
+	text-align: right;
+}
+
+
+.switch-wrapper__input-units,
+.switch-wrapper__output-units {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.results-wrapper__input-field {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #ffffff;
+	padding-bottom: 10px;
+	position: relative;
+	padding-right: 30px;
+}
+
+.results-wrapper__output-field {
+	padding-right: 30px;
+}
+
+.input-field__input-data {
+	-webkit-appearance: none;
+    width: 100%;
+    border: 0;
+    outline: none;
+    text-align: right;
+    font-family: "Mi Lanting", arial;
+    background-color: #000000;
+	color: #ffffff;
+}
+
+.input-field__input-data::-webkit-input-placeholder {
+	background-color: #000000;
+	color: #ffffff;
+}
+
+.data {
+	font-size: 40px;
+	box-sizing: border-box;
+}
+
+.descr {
+	font-size: 14px;
+	box-sizing: border-box;
+}
+
+.converter__grid-wrapper {
+	height: 50%;
+}
+
+.grid__table {
+	border-collapse: collapse;
+	width: 100%;
+	min-height: 100%;
+	border-left-style: hidden;
+    border-bottom-style: hidden;
+    border-right-style: hidden;
+    padding: 0;
+}
+
+.grid__cell {
+	width: 25%;
+	height: 25%;
+	border: 2px solid #ffffff;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 28px;
+	padding: 0;
+}
+
+.grid__cell-back {
+	background-image: url('../img/backspace-white.png');
+	background-repeat: no-repeat;
+	background-position: 50%;
+	background-size: 30px;
+}
